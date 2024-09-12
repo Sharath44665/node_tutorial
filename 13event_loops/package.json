@@ -1,0 +1,15 @@
+{
+  "name": "13event_loops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1readFile.js",
+  "scripts": {
+    "start": "nodemon 4server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
