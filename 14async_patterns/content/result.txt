@@ -1,0 +1,3 @@
+this is awesome, first: hello, this is a first file, demo text, second: demo text from second filethis is awesome, first: hello, this is a first file, demo text, second: demo text from second file
+this is awesome, first: hello, this is a first file, demo text, second: utf-8
+this is awesome, first: hello, this is a first file, demo text, second: demo text from second file
