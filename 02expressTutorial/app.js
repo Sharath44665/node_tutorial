@@ -1,25 +1,25 @@
-const express = require('express');
+const express = require('express')
+// let {people} = require('./data')
+const people = require('./routes/people');
+const login = require('./routes/auth')
 const app = express()
 
-app.get('/', (request, response) => {
-    response.status(200).send("Home page Sharath");
+app.use(express.static('./public_methods')) // using static folders
+
+// parse form data
+app.use(express.urlencoded({extended:false}))
+// parse json data      
+app.use(express.json()) // to access from forms     
+app.use('/api/people', people) // routes start from /api/people
+
+app.use('/login', login)
+                     
+        
+
+app.listen(5000, ()=> {          
+    console.log('sever listening on 5000...')
 })
 
-app.get('/about', (request, response) => {
-    response.status(200).send("about page")
-})
+/* output: 
 
-app.all('*', (request, response) => {
-    response.status(404).send('<h1>Page not found</h1>');
-})
-// app.get = read
-// app.post = insert
-// app.put = update
-// app.delete
-// app.all
-// app.use
-// app.listen
-
-app.listen(5000, () =>{
-    console.log("server listening at 5000...")
-})
+*/      

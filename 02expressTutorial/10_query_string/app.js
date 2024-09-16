@@ -41,6 +41,7 @@ app.get('/api/products/:pid/sss/:demoid', (req, res) => {
 });
 
 // qurey string params
+// if you have ERR_HTTP_HEADERS_SENT, do returning the response, like => return res.send('blah')
 app.get('/api/v1/query', (req, res) => {
     // url = http://localhost:5000/api/v1/query?name=sharath&id=3   
     // console.log(req.query); // { name: 'sharath', id: '3' }
