@@ -6,7 +6,7 @@ const app = express()
 // if u have more pages, this method wont look nice use this
                
 // app.use(logger) // applies to all        
-app.use('/  api', logger) // applies to those paths which have /api/somepage/anotherpage/...    
+app.use('/api', logger) // applies to those paths which have /api/somepage/anotherpage/...    
 
 app.get('/', (req, res) => {
       
